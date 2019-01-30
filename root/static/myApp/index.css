@@ -1,0 +1,144 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+#sub-title {
+  padding-top: 85px;
+  font-family: 'Noto Sans KR';
+  font-size: 30px;
+  font-weight: 600;
+  color: #133856;
+}
+
+#sub-detail {
+  font-family: 'Noto Sans KR';
+  font-size: 17px;
+}
+
+.btn-outline {
+  color: white;
+  border: 1px solid;
+  border-color: white;
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active {
+  color: white;
+  border-color: #fdcc52;
+  background-color: #fdcc52;
+}
+
+.btn {
+  border-radius: 300px;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  font-size: 11px;
+  padding: 15px 45px;
+}
+
+a {
+  color: #fdcc52;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+a:hover, a:focus {
+  color: #fcbd20;
+}
+
+/* header */
+#main-title {
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
+}
+
+header.masthead {
+
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: url("bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#FFC371), to(#FF5F6D));
+  background: url("bg-pattern.png"), linear-gradient(to left, #FFC371, #FF5F6D);
+}
+
+header.masthead .header-content {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+header.masthead .header-content h1 {
+  font-size: 30px;
+}
+
+
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead .header-content {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  header.masthead .header-content h1 {
+    font-size: 50px;
+  }
+}
+/* footer */
+/*
+footer {
+  padding: 25px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #133856;
+}
+
+.foot {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #133856;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+*/
+
+/* main */
+.btn-main {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width: 95%;
+  height: 100%;
+  background-color: #808080;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  opacity: 0;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-main:hover {opacity: 0.6}
+
+.img-main {
+  width: 100%;
+  height: auto;
+}
