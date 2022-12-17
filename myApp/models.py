@@ -42,7 +42,7 @@ class Future(models.Model):
 
 class en_Project(models.Model):
     nick = models.CharField(default='', max_length=10)
-    title = models.CharField(max_length=30)
+    title = models.CharField(max_length=50)
     color = models.CharField(default='white', max_length=30)
     summary = models.CharField(max_length=500)
     #detail = models.CharField(max_length=1000)
@@ -55,7 +55,7 @@ class en_Project(models.Model):
 
 class en_Activity(models.Model):
     nick = models.CharField(default='', max_length=10)
-    title = models.CharField(max_length=30)
+    title = models.CharField(max_length=50)
     color = models.CharField(default='white', max_length=30)
     summary = models.CharField(max_length=500)
     #detail = models.CharField(max_length=1000)
