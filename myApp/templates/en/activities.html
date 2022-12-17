@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% load staticfiles %}
+{% block extrastyle %}
+    {% static "myApp/projects.css" %}
+{% endblock %}
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}JS-Activity{% endblock %}</title>
+  </head>
+  <body>
+    {% block content %}
+    <!--<a href="#smart" class="btn">click</a>-->
+    <div style="height:100px; background-color:transparent;">
+
+    </div>
+
+      {% for act in en_act_list %}
+      <div class="container-fluid" style="background-color: {{ act.color }};">
+      <section id="{{ act.nick }}" style="padding-top:20px; padding-bottom:30px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <h1 id="title" style="color:#133856;">{{ act.title }}</h1>
+              <mark style="background-color:#D94D50; color: white;">>  {{ act.summary }}</mark>
+            </div>
+          </div>
+        </div><br>
+
+        <div class="container">
+          <div class="row">
+            <div class="item col-md-6 col-sm-12">
+              <img class="rounded" src="{{ act.photo.url }}" style="width: 100%; height: auto;"/>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div id="container">
+                <div id="content">
+                  {{ act.detail|linebreaks }}<br><br>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+    </div>
+      <p/>
+      {% endfor %}
+
+    {% endblock %}
+
+  </body>
+</html>
